@@ -1,4 +1,4 @@
-export const Icon = ({ name, size = 24, color = 'currentColor', className, ...props }) => {
+export const Icon = ({ size = 24, color = 'currentColor', className, ...props }) => {
   return (
     <svg
       width={size}
@@ -10,7 +10,7 @@ export const Icon = ({ name, size = 24, color = 'currentColor', className, ...pr
       className={className}
       {...props}
     >
-      {/* Icon implementation goes here */}
+      {}
     </svg>
   );
 };

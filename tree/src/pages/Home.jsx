@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { TreeList } from '../components/organisms/TreeList';
-import { SearchBar } from '../components/molecules/SearchBar';
 import { Header } from '../components/molecules/Header';
 
 export const Home = () => {
@@ -16,7 +15,6 @@ export const Home = () => {
   return (
     <div className="home-page">
       <Header title="Tree Plantation" subtitle="Discover and plant trees" />
-      <SearchBar value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
       <TreeList trees={trees} loading={loading} />
     </div>
   );
